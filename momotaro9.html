@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <style>
+     body{
+      overflow: hidden;
+      margin: 1;
+      padding: 1;
+      background-image: url(momoend.png);
+      background-size: cover;
+      }
+      
+      @keyframes ni{
+         100%{
+           opacity: 1;
+         }
+       }
+       #night{
+         width: 72%;
+         background-color: rgba(237, 243, 255, 0.5);
+         font-family: 'Inconsolata', monospace;
+         color: #000000;
+         font-size: 20px;
+         padding-top: 3px;
+         opacity: 0;
+         position: absolute;
+         left: 2%;
+         top: 3%;
+         animation-name: ni;
+         animation-duration: 2s;
+         animation-delay: 0.5s;
+         animation-direction: alternate;
+         animation-iteration-count: 1;
+         animation-fill-mode: forwards;
+       }
+      
+      #end{
+        width: 30%;
+        height: 20%;
+        font-family: 'Special Elite', cursive;
+        font-size: 70px;
+        color: rgba(196, 1, 53, 0.8);
+        position: absolute;
+        left: 42%;
+        top: 28%;
+      }
+      
+      #tri{
+        width: 3%;
+        height: 7%;
+        clip-path: polygon(50% 5%, 0 95%, 100% 95%);
+        shape-outside: polygon(50% 5%, 0 95%, 100% 95%);
+        background-color: rgba(255, 179, 122, 0.7);
+        position: absolute;
+        left:38%;
+        top: 38%;
+      }
+      #trii{
+        width: 3%;
+        height: 7%;
+        clip-path: polygon(50% 5%, 0 95%, 100% 95%);
+        shape-outside: polygon(50% 5%, 0 95%, 100% 95%);
+        background-color: rgba(255, 179, 122, 0.7);
+        position: absolute;
+        left:63%;
+        top: 38%;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="tri"></div>
+    <div id="trii"></div>
+    <div id="end"><p>THE END</p></div>
+    <div id="night"><p>"How surprised the old man and his wife were when they saw their son come home safely! With all the treasure Momotaro brought they were very rich, and they all lived happily ever after."</p></div>
+  </body>
+</html>

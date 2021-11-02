@@ -1,0 +1,115 @@
+<html lang="en">
+  <head>
+    <style>
+      @keyframes buttonfade {
+         100% {
+           opacity: 1;
+         }
+       }
+    
+      button{
+         height: 8%;
+         background-color: #FFBC9A;
+         font-size: 20px;
+         color: grey;
+         border-radius: 20px;
+         opacity: 1;
+         position: absolute;
+         left: 87%;
+         top: 6%;
+         z-index: 1;
+         opacity: 0;
+         animation-name: buttonfade;
+         animation-delay: 4s;
+         animation-fill-mode: forwards;
+         animation-timing-function: ease-in;
+       }
+       
+       @keyframes momo{
+         100%{
+           transform: translate(26vw, 55vh);
+         }
+       }
+       
+       #momo{
+         position: absolute;
+         left: 5%;
+         top: 10%;
+         animation-name: momo;
+         animation-duration: 4s;
+         animation-timing-function: linear;
+         animation-direction: alternate;
+         animation-iteration-count: infinite;
+       }
+       
+       .container {
+        width: 30%;
+        height: 55%;
+        position: absolute;
+        left: 56%;
+        top: 35%;
+        
+       }
+       #mom{
+         height: 100%;
+         background-image: url(momokawa.png);
+         background-repeat: no-repeat;
+         background-size: 100%;
+         z-index: 2;
+         animation-name: open;
+         animation-duration: 1s;
+         animation-delay: 2s;
+         animation-fill-mode: forwards;
+         animation-iteration-count: 1;
+       }
+       
+       @keyframes open{
+         100%{
+           background-image: url(momokawaopen.png);
+           background-repeat: no-repeat;
+         }
+       }
+       
+       @keyframes o{
+         100%{
+           opacity: 1;
+         }
+       }
+       
+       #one{
+         width: 72%;
+         background-color: rgba(237, 243, 255, 0.5);
+         font-family: 'Inconsolata', monospace;
+         font-size: 18px;
+         color: #000000;
+         text-shadow: 0px 0px 20px white;
+         opacity: 0;
+         position: absolute;
+         left: 2%;
+         top: 3%;
+         animation-name: o;
+         animation-duration: 2s;
+         animation-delay: 0.7s;
+         animation-direction: alternate;
+         animation-iteration-count: 1;
+         animation-fill-mode: forwards;
+       }
+      
+      body{
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      background-image: url(mom.png);
+      background-size: cover;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="mom"></div>
+    </div>
+    <img src="peach.png" id="momo" width="15%">
+    <button onclick="location.href='momotaro2.html'">Next Page</button>
+    <div id = one><p>"Long long ago, there lived an old man and an old woman. One day, the old man went to the hills as usual to cut grass and the old woman took some clothes to the river to wash. The old woman at last found a nice spot by the river bank and put her basket down. Then she set to work to wash the clothes; she took them one by one out of the basket and washed them in the river and rubbed them on the stones. As she was busy washing her clothes, a great peach came bumping down the stream. 'DONBURAKO DONBURAKO' The old woman looked up and saw the biggest peach she has ever seen. She pulled the peach out of the river and took it home to eat with her husband for supper.</p></div>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <style>
+    @keyframes buttonfade {
+         100% {
+           opacity: 1;
+         }
+       }
+    
+      button{
+         height: 8%;
+         background-color: #FFBC9A;
+         font-size: 20px;
+         color: grey;
+         border-radius: 20px;
+         opacity: 1;
+         position: absolute;
+         left: 87%;
+         top: 6%;
+         z-index: 1;
+         opacity: 0;
+         animation-name: buttonfade;
+         animation-delay: 3.5s;
+         animation-fill-mode: forwards;
+         animation-timing-function: ease-in;
+       }
+       
+      #redd{
+        position: absolute;
+        left: 14%;
+        top: 57%;
+      }
+      @keyframes sword{
+        100%{
+          transform: rotate(-10deg);
+        }
+      }
+      #fff{
+        position: absolute;
+        left: 24%;
+        top: 32%;
+        animation-name: sword;
+        animation-duration: 0.3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        animation-play-state: paused;
+      }
+      #fff:hover{
+        animation-play-state: running;
+      }
+      #bluee{
+        position: absolute;
+        left: 60%;
+        top: 30%;
+      }
+      
+      @keyframes peck{
+        100%{
+          transform: rotate(15deg);
+        }
+      }
+      #ki{
+        position: absolute;
+        left: 11%;
+        top: 49%;
+        animation-name: peck;
+        animation-duration: 0.4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        z-index: 3;
+      }
+      
+      @keyframes bite{
+        100%{
+          transform: rotate(-12deg);
+        }
+      }
+      #inu{
+        z-index: 2;
+        position: absolute;
+        left: 55%;
+        top: 55%;
+        animation-name: bite;
+        animation-duration: 0.4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+      }
+      
+      @keyframes kee{
+        100%{
+          transform: rotate(12deg);
+        }
+      }
+      #mon{
+        z-index: 2;
+        position: absolute;
+        left: 68.6%;
+        top: 33%;
+        animation-name: kee;
+        animation-duration: 0.4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+      }
+      
+      #box{
+        width: 17%;
+        height: 17%;
+        background-color: orange;
+        clip-path: polygon(25% 0%, 100% 1%, 100% 57%, 28% 58%, 0 76%);
+        position: absolute;
+        left: 40%;
+        top: 27%;
+        z-index: 5;
+      }
+      #speech{
+        font-family: 'Caveat', cursive;
+        font-size: 25px;
+        padding-left: 70px;
+        position:absolute;
+        left: 5%;
+        top: 5%;
+      }
+      
+      body{
+      overflow: hidden;
+      margin: 1;
+      padding: 1;
+      background-image: url(momofightback.png);
+      background-size: cover;
+      }
+      @keyframes se{
+         100%{
+           opacity: 1;
+         }
+       }
+       #seven{
+         width: 72%;
+         background-color: rgba(237, 243, 255, 0.5);
+         font-family: 'Inconsolata', monospace;
+         color: #000000;
+         font-size: 18px;
+         padding-top: 3px;
+         opacity: 0;
+         position: absolute;
+         left: 2%;
+         top: 3%;
+         animation-name: se;
+         animation-duration: 2s;
+         animation-delay: 0.5s;
+         animation-direction: alternate;
+         animation-iteration-count: 1;
+         animation-fill-mode: forwards;
+       }
+      
+    </style>
+  </head>
+  <body>
+    <button onclick="location.href='momotaro8.html'">Next Page</button>
+    <div id="box">
+      <span id="speech">Hover over ME to defeat the ogre!</span>
+    </div>
+    <img src="momoinu.png" width="11%" id="inu">
+    <img src="momomonkey.png" width="11%" id="mon">
+    <img src="momokiji.png" width="11%" id="ki">
+    <img src="momored.png" width="17%" id="redd">
+    <img src="momoff.png" width="17%" id="fff">
+    <img src="momoblue.png" width="13%" id="bluee">
+    <div id="seven"><p>"First the pheasant flew over the walls of the fort and began to peck at the ogres’ heads. While the ogres weren’t looking, the monkey slipped up and opened the gate of the fort. Then Momotaro and the spotted dog rushed into the fort and started fighting the ogres too. It was a huge battle! The pheasant pecked at the heads and eyes of the wicked ogres. And the monkey clawed them. And the spotted dog bit them. And Momotaro cut them with his sword. At last the ogres were defeated."</p></div>
+  </body>
+</html>

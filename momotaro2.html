@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+    @keyframes buttonfade {
+         100% {
+           opacity: 1;
+         }
+       }
+    
+      button{
+         height: 8%;
+         background-color: #FFBC9A;
+         font-size: 20px;
+         color: grey;
+         border-radius: 20px;
+         opacity: 1;
+         position: absolute;
+         left: 87%;
+         top: 6%;
+         z-index: 1;
+         opacity: 0;
+         animation-name: buttonfade;
+         animation-delay: 4s;
+         animation-fill-mode: forwards;
+         animation-timing-function: ease-in;
+       }
+    @keyframes peachLeft{
+         100%{
+           transform: rotate(-45deg)
+         }
+         
+       }
+       
+       @keyframes peachRight{
+         100%{
+           transform: rotate(45deg)
+         }
+       }
+       
+       #pp{
+         position: absolute;
+         left: 42.5%;
+         top: 41%;
+         animation-name: peachLeft;
+         animation-duration: 2s;
+         animation-delay: 1.5s;
+         animation-iteration-count: 1;
+         animation-fill-mode: forwards;
+       }
+       
+       #ppp{
+         position: absolute;
+         left: 49.5%;
+         top: 41%;
+         animation-name: peachRight;
+         animation-duration: 2s;
+         animation-delay: 1.5s;
+         animation-iteration-count: 1;
+         animation-fill-mode: forwards;
+       }
+       
+       
+       @keyframes up{
+         100%{
+           opacity: 1;
+           transform: translate(-1vh, -3vw);
+         }
+       }
+       #baby{
+         position: absolute;
+         left: 46%;
+         top: 42%;
+         opacity: 0;
+         animation-name: up;
+         animation-duration: 2s;
+         animation-delay: 2s;
+         animation-iteration-count: 1;
+         animation-fill-mode: forwards;
+       }
+       @keyframes sup{
+         100%{
+           opacity: 1;
+         }
+       }
+       #sup{
+         position: absolute;
+         left: 46%;
+         top: 25%;
+         opacity: 0;
+         animation-name: sup;
+         animation-duration: 2s;
+         animation-delay: 2.5s;
+         animation-iteration-count: 1;
+         animation-fill-mode: forwards;
+       }
+       
+    .container {
+        width: 65%;
+        height: 48%;
+        position: absolute;
+        top: 48%;
+        left: 18%;
+    }
+    
+    #woman {
+        height: 100%;
+        background-image: url(momobasan.png);
+        background-repeat: no-repeat;
+        background-size: 24%; /*size of grandman*/
+        animation-name: basan_open;
+        animation-duration: 1s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+    }
+
+    #man {
+        height: 100%;
+        background-image: url(momojisan.png);
+        background-repeat: no-repeat;
+        background-size: 23%;
+        animation-name: jisan_open;
+        animation-duration: 1s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        position: relative;
+        top: -100%;  /* This keeps the image in the same horizontal line as the other image */
+        left: 76%;  /*Adjust left and right position of man */
+    }
+
+    @keyframes basan_open {
+        100% {
+            background-image: url(momomouthbasan.png); /*this is the picture of the mouth open */
+            background-repeat: no-repeat;
+        }
+    }
+    @keyframes jisan_open {
+        100% {
+            background-image: url(momomouthjisan.png); /*this is the picture of the mouth open */
+            background-repeat: no-repeat;
+        }
+    }
+
+    body{
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      background-image: url(momolivingr.jpg);
+      background-size: cover;
+    }
+    
+     @keyframes t{
+         100%{
+           opacity: 1;
+         }
+       }
+       
+       #two{
+         width: 72%;
+         background-color: rgba(237, 243, 255, 0.5);
+         font-family: 'Inconsolata', monospace;
+         font-size: 18px;
+         color: #000000;
+         text-shadow: 0px 0px 20px white;
+         opacity: 0;
+         position: absolute;
+         left: 2%;
+         top: 3%;
+         animation-name: t;
+         animation-duration: 2s;
+         animation-delay: 0.7s;
+         animation-direction: alternate;
+         animation-iteration-count: 1;
+         animation-fill-mode: forwards;
+       }
+    
+    </style>
+</head>
+<body>
+    <button onclick="location.href='momotaro3.html'">Next Page</button>
+    <img src="momotarobaby.png" width="7.5%" id="baby">
+    <img src="momosuprise.png" width="7.5%" id="sup">
+    <img src="peachh.png" width="8%" id="pp">
+    <img src="peachm.png" width="8%" id="ppp">
+    <div class="container">
+        <div id="woman"></div>
+        <div id="man"></div>
+    </div>
+    <div id="two"><p>The old man brought a big knife from the kitchen and was getting ready to cut the peach in half. But just then, the peach split open, and a beautiful baby boy jumped out.</p></div>
+</body>
+</html>
